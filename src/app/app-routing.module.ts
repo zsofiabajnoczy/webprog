@@ -8,9 +8,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 const routes: Routes = [
   {path: "", component: HtmlComponent},
-  {path: "/css", component: CssComponent},
-  {path: "/bootstrap", component: BootstrapComponent},
-  {path: "/javascript", component: JavascriptComponent},
+  {path: "css", component: CssComponent},
+  {path: "bootstrap", component: BootstrapComponent},
+  {path: "javascript", component: JavascriptComponent},
   {path: "**", component: PageNotFoundComponent},
 ];
 
