@@ -1,0 +1,16 @@
+@import '../../styles';
+h1 {
+    color: var(--c-dark-dark-blue);
+}
+
+h2,
+h3 {
+    color: var(--c-dark-dark-blue);
+    margin-top: 2%;
+}
+
+header p,
+h3 {
+    color: var(--c-dark-blue);
+    text-align: justify;
+}

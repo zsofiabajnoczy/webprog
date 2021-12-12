@@ -1,1 +1,94 @@
-<p>bootstrap works!</p>
+<header class="container">
+    <h1>Bootstrap</h1>
+    <p>A Bootstrap egy nyílt forráskódú keretrendszer (framework), mely HTML, CSS, JavaScript technológiákat használ. </p>
+    <p>A Bootstrap előnye, hogy a legtöbb „problémára”, mellyel egy fejlesztő találkozik weboldalak arculatának kialakításakor, már egy előre elkészített megoldást kínál, ami vagy teljesen megfelel az adott célra, vagy pedig minimális átalakítással.</p>
+    <p>Használata során előfordulhat, hogy bizonyos komponenseket mégis módosítani szeretnénk, így egyedivé téve az oldalt. Erre van lehetőség, ám nem ajánlott ez a gyakorlat, mivel a frissítések során visszaállnak a beállítások az alapállapotba. Ha mégis
+        módosítani szeretnénk, akkor ezt érdemes egy különálló CSS fáljban megtenni, így ezt nem fogja érinteni a frissítés. </p>
+</header>
+<main class="container">
+    <h2>Példák a Bootstrap megoldásaira</h2>
+    <article id="table">
+        <h3>Táblázat</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Dátum</th>
+                    <th scope="col">Verzió</th>
+                    <th scope="col">Történet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">2011</th>
+                    <td>Twitter Blueprint / Bootstrap</td>
+                    <td>Mark Otto és Jacob Thornton a Twitternél megunták a sok, különféle belső eszköz folyamatos összehangolását és elkezdtek egy keretrendszeren dolgozni. Ez volt leánykori nevén a Twitter Blueprint, amelyet a megjelenés előtt egyszerűen
+                        csak Bootstrap-nek neveztek, s amelyet végül 2011. augusztus 11 -én open source projekt formájában publikáltak.</td>
+                </tr>
+                <tr>
+                    <th scope="row">2012</th>
+                    <td>Bootstrap 2</td>
+                    <td rowspan="3">A projekt hatalmas sikert aratott, sőt egy egsz közösség épült köré, ennek köszönhetően pedig folyamatosan fejlődni tudott. Évente adták ki a verziókat, míg végül 2014-ben megjelent a Bootstrap 4, amely több mint 6 évig élt.</td>
+                </tr>
+                <tr>
+                    <th scope="row">2013</th>
+                    <td>Bootstrap 3</td>
+                </tr>
+                <tr>
+                    <th scope="row">2014</th>
+                    <td>Bootstrap 4</td>
+                </tr>
+                <tr>
+                    <th scope="row">2021</th>
+                    <td>Bootstrap 5</td>
+                    <td>2021. május 5-én egy újabb áttörés történt, ugyanis több hónapnyi fejlesztés után megjelent a várva várt Bootstrap 5.</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+    <article id="forms">
+        <h3>Űrlapok</h3>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Kérem, írja be az email címét!">
+                <small id="emailHelp" class="form-text text-muted">Email címét bizalmasan kezeljük, harmadik félnek nem adjuk át.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Jelszó</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Jelszó">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Maradjon bejelentkezve</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Belépés</button>
+        </form>
+    </article>
+    <article id="code">
+        <h3>Code blocks</h3>
+        <p>A fenti email űrlap forráskódja:</p>
+        <pre><code>
+            &lt;form&gt;
+            &lt;div class="form-group"&gt;
+            &lt;label for="exampleInputEmail1"&gt;Email&lt;/label&gt;
+            &lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Kérem, írja be az email címét!"&gt;
+            &lt;small id="emailHelp" class="form-text text-muted"&gt;Email címét bizalmasan kezeljük, harmadik félnek nem adjuk át.&lt;/small&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+            &lt;label for="exampleInputPassword1"&gt;Jelszó&lt;/label&gt;
+            &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Jelszó"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-check"&gt;
+            &lt;input type="checkbox" class="form-check-input" id="exampleCheck1"&gt;
+            &lt;label class="form-check-label" for="exampleCheck1"&gt;Maradjon bejelentkezve&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;button type="submit" class="btn btn-primary"&gt;Belépés&lt;/button&gt;
+            &lt;/form&gt;
+            </code></pre>
+    </article>
+    <article id="carousel">
+        <h3>Carousel</h3>
+    </article>
+    <article></article>
+</main>
+<footer class="container"><em>Forrás: Wikipédia, W3C</em></footer>
