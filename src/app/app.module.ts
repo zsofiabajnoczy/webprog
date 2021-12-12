@@ -9,6 +9,10 @@ import { CssComponent } from './css/css.component';
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AngularFirestoreModule} from '@angular/fire/compat/firestore'
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from 'src/environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +26,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

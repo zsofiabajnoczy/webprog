@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webprog-c95e2": {
+      "hosting": {
+        "webprog": [
+          "webprog-c95e2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webprog-c95e2"
+  }
+}
