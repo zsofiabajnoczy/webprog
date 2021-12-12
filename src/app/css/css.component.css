@@ -1,0 +1,125 @@
+@import '../../styles';
+h1 {
+    color: var(--c-dark-dark-blue);
+}
+
+h2,
+#framework h3 {
+    color: var(--c-dark-dark-blue);
+}
+
+header p,
+#framework h3 {
+    color: var(--c-dark-blue);
+    text-align: justify;
+}
+
+.styling-article {
+    margin-top: 2%;
+    margin-bottom: 2;
+}
+
+.styling {
+    background-color: var(--c-middle-blue);
+    border: solid 1px var(--c-middle-blue);
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 0 var(--c-dark-dark-blue);
+    color: var(--c-light-blue);
+    text-align: center;
+    padding: 2%;
+    margin: 10%, 0%;
+}
+
+#syntax-flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+#syntax_text {
+    width: 30%;
+    text-align: justify;
+    margin-right: 2%;
+}
+
+#syntax {
+    width: 25%;
+    margin-right: 2%;
+}
+
+#box-model {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+#box-model img {
+    width: 70%;
+}
+
+#box-model h3 {
+    margin-bottom: 5%;
+}
+
+#box-model p {
+    margin-top: 5%;
+}
+
+#styling-flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+#syntax_text:hover {
+    background-color: var(--c-light-blue);
+    color: var(--c-middle-blue);
+    border: 1px solid var(--c-light-blue);
+}
+
+#syntax:hover {
+    background-color: var(--c-light-blue);
+    color: var(--c-middle-blue);
+    border: 1px solid var(--c-light-blue);
+}
+
+#box-model:hover {
+    background-color: var(--c-light-blue);
+    color: var(--c-middle-blue);
+    border: 1px solid var(--c-light-blue);
+}
+
+.styling-card {
+    width: 30%;
+    border: 1px solid var(--c-dark-blue);
+    border-radius: 10px;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    background-color: var(--c-light-blue);
+    color: var(--c-dark-dark-blue);
+}
+
+.styling-card p {
+    text-align: justify;
+}
+
+.styling-card:hover {
+    width: 30%;
+    border: 1px solid var(--c-dark-blue);
+    border-radius: 10px;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    background-color: var(--c-light-light-blue);
+    color: var(--c-dark-blue);
+}
+
+.styling-card img {
+    width: 95%;
+    margin: 5% 0%;
+}
+
+img:hover {
+    transform: scale(1.1);
+}

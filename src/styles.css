@@ -3,3 +3,11 @@
 body {
     box-sizing: border-box;
 }
+
+:root {
+    --c-dark-dark-blue: #0D0221;
+    --c-dark-blue: #0F084B;
+    --c-middle-blue: #26408B;
+    --c-light-blue: #A6CFD5;
+    --c-light-light-blue: #C2E7D9;
+}
