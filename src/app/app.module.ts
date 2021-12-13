@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AngularFirestoreModule} from '@angular/fire/compat/firestore'
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
+import { ImageModalComponent } from './image-modal/image-modal.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { environment } from 'src/environments/environment';
     CssComponent,
     BootstrapComponent,
     JavascriptComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ImageModalComponent
   ],
   imports: [
     BrowserModule,
