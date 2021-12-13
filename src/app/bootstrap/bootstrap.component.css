@@ -14,3 +14,7 @@ h3 {
     color: var(--c-dark-blue);
     text-align: justify;
 }
+
+img {
+    height: 400px;
+}

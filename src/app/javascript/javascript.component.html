@@ -1,1 +1,48 @@
-<p>javascript works!</p>
+<header class="container">
+    <h1>JavaScript</h1>
+</header>
+<main class="container">
+    <article>
+        <h3>Stílus módosítása JavaScript segítségével</h3>
+        <p id="text">A JavaScript programozási nyelv egy objektumorientált, prototípus-alapú szkriptnyelv, amelyet weboldalakon elterjedten használnak. <br> A JavaScript esetében a futási környezet jellemzően egy webböngésző (JavaScript-motorja).</p>
+        <div id="buttons">
+            <button type="button" class="btn btn-primary" onclick='document.getElementById("text").style.color="#26408B"'>Kék szöveg</button>
+            <button type="button " class="btn btn-light " onclick='document.getElementById("text").style.visibility="hidden"'>Elrejt</button>
+            <button type="button" class="btn btn-success" onclick='document.getElementById("text").style.visibility="visible"'>Megmutat</button>
+            <button type="button" class="btn btn-danger" onclick='document.getElementById("text").style.color="red"'>Piros szöveg</button>
+            <button type="button" class="btn btn-warning" onclick='document.getElementById("text").style.fontSize="larger"'>Nagyobb betűk</button>
+            <button type="button " class="btn btn-info " onclick='document.getElementById("text").style.backgroundColor="#A6CFD5"'>Kék háttér</button>
+            <button type="button " class="btn btn-light " onclick='document.getElementById("text").style.fontSize="smaller"'>Kisebb betűk</button>
+            <button type="button " class="btn btn-dark " onclick='document.getElementById("text").style.fontWeight="bold"'>Félkövér betűk</button>
+        </div>
+    </article>
+    <article id="table">
+        <h3>Felugró modal ablak létrehozása</h3>
+        <p>A lenti táblázatban a könyv címére kattintva megjelenik a borító képe:</p>
+        <section class="table-container">
+            <table class="table table-dark table-striped">
+                <app-image-modal *ngIf="showModal" [chosenImage]="actualImage" (clickCloseButton)="closeImage()">
+                </app-image-modal>
+
+                <thead>
+                    <tr>
+                        <th>Cím:</th>
+                        <th>Év:</th>
+                        <th>Kategória:</th>
+                        <th>Szerző:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-book-row" *ngFor="let book of bookList">
+                        <td (click)="showImage(book.imageUrl)">{{book.title}}</td>
+                        <td>{{book.year}}</td>
+                        <td>{{book.category}}</td>
+                        <td>{{book.author}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="update-button" (click)="updateList()">Frissítés</button>
+        </section>
+
+    </article>
+</main>
