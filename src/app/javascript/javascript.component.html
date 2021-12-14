@@ -3,17 +3,22 @@
 </header>
 <main class="container">
     <article>
+        <h3>Mai dátum megjelenítése</h3>
+        <button type="button" class="btn btn-dark" (click)="addTime()">Mai dátum</button>
+        <p id="ido">{{ido}}</p>
+    </article>
+    <article>
         <h3>Stílus módosítása JavaScript segítségével</h3>
         <p id="text">A JavaScript programozási nyelv egy objektumorientált, prototípus-alapú szkriptnyelv, amelyet weboldalakon elterjedten használnak. <br> A JavaScript esetében a futási környezet jellemzően egy webböngésző (JavaScript-motorja).</p>
         <div id="buttons">
             <button type="button" class="btn btn-primary" onclick='document.getElementById("text").style.color="#26408B"'>Kék szöveg</button>
-            <button type="button " class="btn btn-light " onclick='document.getElementById("text").style.visibility="hidden"'>Elrejt</button>
+            <button type="button" class="btn btn-light" onclick='document.getElementById("text").style.visibility="hidden"'>Elrejt</button>
             <button type="button" class="btn btn-success" onclick='document.getElementById("text").style.visibility="visible"'>Megmutat</button>
             <button type="button" class="btn btn-danger" onclick='document.getElementById("text").style.color="red"'>Piros szöveg</button>
             <button type="button" class="btn btn-warning" onclick='document.getElementById("text").style.fontSize="larger"'>Nagyobb betűk</button>
-            <button type="button " class="btn btn-info " onclick='document.getElementById("text").style.backgroundColor="#A6CFD5"'>Kék háttér</button>
-            <button type="button " class="btn btn-light " onclick='document.getElementById("text").style.fontSize="smaller"'>Kisebb betűk</button>
-            <button type="button " class="btn btn-dark " onclick='document.getElementById("text").style.fontWeight="bold"'>Félkövér betűk</button>
+            <button type="button" class="btn btn-info" onclick='document.getElementById("text").style.backgroundColor="#A6CFD5"'>Kék háttér</button>
+            <button type="button" class="btn btn-light" onclick='document.getElementById("text").style.fontSize="smaller"'>Kisebb betűk</button>
+            <button type="button" class="btn btn-dark" onclick='document.getElementById("text").style.fontWeight="bold"'>Félkövér betűk</button>
         </div>
     </article>
     <article id="table">
@@ -41,7 +46,7 @@
                     </tr>
                 </tbody>
             </table>
-            <button id="update-button" (click)="updateList()">Frissítés</button>
+            <button type="button" class="btn btn-dark" id="update-button" (click)="updateList()">Könyvlista betöltése</button>
         </section>
 
     </article>

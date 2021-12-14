@@ -24,3 +24,10 @@ h3 {
     padding: 2%;
     text-align: justify;
 }
+
+#ido {
+    color: var(--c-dark-dark-blue);
+    margin-top: 2%;
+    font-size: larger;
+    font-weight: 600;
+}
