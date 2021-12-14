@@ -6,6 +6,7 @@ h1 {
 h2,
 #framework h3 {
     color: var(--c-dark-dark-blue);
+    margin-top: 2%;
 }
 
 header p,
@@ -32,21 +33,20 @@ header p,
 
 #syntax-flexbox {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #syntax_text {
-    width: 30%;
+    margin-top: 2%;
     text-align: justify;
-    margin-right: 2%;
 }
 
 #syntax {
-    width: 25%;
-    margin-right: 2%;
+    margin-top: 2%;
 }
 
 #box-model {
+    margin-top: 2%;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@ header p,
 
 #styling-flexbox {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #syntax_text:hover {
@@ -90,7 +90,6 @@ header p,
 }
 
 .styling-card {
-    width: 30%;
     border: 1px solid var(--c-dark-blue);
     border-radius: 10px;
     margin: 2%;
@@ -105,7 +104,6 @@ header p,
 }
 
 .styling-card:hover {
-    width: 30%;
     border: 1px solid var(--c-dark-blue);
     border-radius: 10px;
     margin: 2%;
@@ -122,4 +120,58 @@ header p,
 
 img:hover {
     transform: scale(1.1);
+}
+
+@media only screen and (min-width: 576px) {
+    #syntax-flexbox {
+        display: flex;
+        flex-direction: row;
+    }
+    #syntax_text {
+        margin-top: 0%;
+        width: 30%;
+        text-align: justify;
+        margin-right: 2%;
+    }
+    #syntax {
+        margin-top: 0%;
+        width: 25%;
+        margin-right: 2%;
+    }
+    #box-model {
+        margin-top: 0%;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+    #box-model img {
+        width: 70%;
+    }
+    #box-model h3 {
+        margin-bottom: 5%;
+    }
+    #box-model p {
+        margin-top: 5%;
+    }
+    #styling-flexbox {
+        display: flex;
+        flex-direction: row;
+    }
+    #syntax_text:hover {
+        background-color: var(--c-light-blue);
+        color: var(--c-middle-blue);
+        border: 1px solid var(--c-light-blue);
+    }
+    #syntax:hover {
+        background-color: var(--c-light-blue);
+        color: var(--c-middle-blue);
+        border: 1px solid var(--c-light-blue);
+    }
+    #box-model:hover {
+        background-color: var(--c-light-blue);
+        color: var(--c-middle-blue);
+        border: 1px solid var(--c-light-blue);
+    }
 }
